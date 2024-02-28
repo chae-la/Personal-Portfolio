@@ -25,3 +25,40 @@ $tertiary-color: #b30f15;
             font-weight: 500;
         }
 }
+
+.main {
+    margin: 30px;
+        &__about{
+            text-align: center;
+            margin-top: 80px;
+        }
+        &__img{
+
+        }
+        &__description{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 2rem;
+        }
+}
+
+.section{
+    margin:30px;
+        &__about{
+         text-align: center;
+         margin-top: 80px;
+        }
+        &__description{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 2rem;
+            text-align: center;
+            margin: 30px 0px;
+        }
+        &__container {
+            display:flex;
+            justify-content: space-evenly;
+                &--icon{
+                    height:3rem;
+                }
+            
+        }
+}
