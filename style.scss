@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 $primary-color:#333;
@@ -36,7 +36,6 @@ $tertiary-color: #b30f15;
 
         }
         &__description{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             line-height: 2rem;
         }
 }
@@ -48,7 +47,6 @@ $tertiary-color: #b30f15;
          margin-top: 80px;
         }
         &__description{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             line-height: 2rem;
             text-align: center;
             margin: 30px 0px;
@@ -60,5 +58,42 @@ $tertiary-color: #b30f15;
                     height:3rem;
                 }
             
+        }
+}
+
+.article{
+    margin: 30px;
+        &__title{
+            text-align: center;
+            margin-top: 80px;
+        }
+        &__img{
+            width: 260px;
+        }
+        &__language{
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+        &__client{
+            font-size: 2rem;
+        }
+        &__project {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height:1.5rem;
+            margin: 20px 0;
+        }
+        &__button {
+            text-decoration: none;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            padding: 7px 20px;
+            border-radius: 4px;
+            margin-right: 20px;
+            font-weight: 300;
+                &:hover{
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    transition: 0.5s;
+                }
         }
 }
