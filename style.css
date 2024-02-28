@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav__button {
+  text-decoration: none;
+  color: #333;
+  /*align text*/
+}/*# sourceMappingURL=style.css.map */

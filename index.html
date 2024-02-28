@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-        </nav>
-    </header>
-    <main>
+     <nav class="nav">
+         <a class="nav__button" href="#">About</a>
+         <a class="nav__button" href="#">Projects</a>
+    </nav>
+    
+    <header class="div">
         <h1 id="animated-greeting" class="greeting">Hello</h1>
-        <h1 class="name">I am Michaela</h1>
-        <h3 class="location">Based in Hertfordshire</h3>
+        <h1 class="heading__name">I am Michaela</h1>
+        <h3 class="heading__location">Based in Hertfordshire</h3>
 
-    </main>
+    </header>
 
 
     <script>
@@ -30,7 +29,7 @@
             heading.textContent = texts[currentIndex];
             currentIndex = (currentIndex + 1) % texts.length;
         }
-        setInterval(changeText, 3000);
+        setInterval(changeText, 1500);
     </script>
 
 </body>

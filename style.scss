@@ -2,4 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
 }
+
+$primary-color:#333;
+$secondary-color: white;
+$tertiary-color: #b30f15;
+
+.nav__button {
+    text-decoration: none;
+    color: $primary-color;
+ /*align text*/
+}
+
+
