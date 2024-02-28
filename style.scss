@@ -9,39 +9,19 @@ $primary-color:#333;
 $secondary-color: white;
 $tertiary-color: #b30f15;
 
-
-.nav{
-    text-align: end;
+/*.nav{
     background-color: $primary-color;
-    height: 30px;
-        &__button {
-            text-decoration: none;
-            color: $secondary-color;
-            font-size: 1rem;
-            margin-right: 10px;
-                /*&--dark{
-                    color:
-                }*/
-}   
+    color:$secondary-color;
+    display: flex;
+} */
 
-}
-
-.heading {
-    text-align: center;
-    margin-top: 30px;
-        &__greeting{
-            font-size: 2.5rem;
-        }
-        &__pronoun{
-            font-size: 1rem;
-            margin:15px;
-        }
+.header{
+    margin: 30px;
         &__name{
-            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
-        &__location{
-            font-size: 1rem;
-            margin-top: 15px;
-            word-spacing: 2.5em;
+        &__intro{
+            font-size: 3rem;
+            font-weight: 500;
         }
 }

@@ -7,33 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <nav class="nav">
-         <!--<button id="dark-mode-toggle" class="nav__button nav__button--dark">Dark Mode</button>-->
-         <a class="nav__button nav__button--about" href="#">About</a>
-         <a class="nav__button nav__button--projects" href="#">Projects</a>
-         
-    </nav>
+   <!-- <nav class="nav">
+        <p class="nav__about">About</p>
+        <p class="nav__about">Technical Skills</p>
+        <p class="nav__project">Projects</p>
+    </nav> -->
+     <header class="header">
+        <h3 class="header__name" id="typing-animation"></h3>
+        <h1 class="header__intro">A Junior Software Developer based in London</h1>
+     </header>
+
+     <main class="main">About Me</main>
     
-    <header class="heading">
-        <h1 id="animated-greeting" class="heading__greeting">Hello</h1>
-        <h1 class="heading__pronoun">I am</h1>
-        <h1 class="heading__name">Michaela</h1>
-        <h3 class="heading__location">Based in Hertfordshire</h3>
 
-    </header>
+     <script>
+        const text = "Hi! I'm Michaela"; 
+        const speed = 50; 
+const repeatDelay = 2000; 
 
+const typingElement = document.getElementById('typing-animation');
 
-    <script>
-        const heading = document.getElementById("animated-greeting");
-        const texts = ["Hello", "Hola", "你好", "Selamat Datang", "안녕하세요", "السلام عليكم"];
-        let currentIndex = 0;
-        let letterIndex = 0;
-        function changeText() {
-            heading.textContent = texts[currentIndex];
-            currentIndex = (currentIndex + 1) % texts.length;
+function typeWriter() {
+    let i = 0;
+    typingElement.innerHTML = ''; 
+    function typeNextCharacter() {
+        if (i < text.length) {
+            typingElement.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeNextCharacter, speed);
+        } else {
+            setTimeout(typeWriter, repeatDelay); 
         }
-        setInterval(changeText, 1500);
-    </script>
+    }
+    typeNextCharacter();
+}
+
+typeWriter()
+     </script>
 
 </body>
 </html>
