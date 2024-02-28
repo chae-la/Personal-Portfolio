@@ -8,13 +8,14 @@
 </head>
 <body>
      <nav class="nav">
-         <a class="nav__button" href="#">About</a>
-         <a class="nav__button" href="#">Projects</a>
+         <a class="nav__button nav__button--about" href="#">About</a>
+         <a class="nav__button nav__button--projects" href="#">Projects</a>
     </nav>
     
-    <header class="div">
+    <header class="heading">
         <h1 id="animated-greeting" class="greeting">Hello</h1>
-        <h1 class="heading__name">I am Michaela</h1>
+        <h1 class="heading__name">I am</h1>
+        <h1 class="heading__name">Michaela</h1>
         <h3 class="heading__location">Based in Hertfordshire</h3>
 
     </header>
@@ -22,7 +23,7 @@
 
     <script>
         const heading = document.getElementById("animated-greeting");
-        const texts = ["Hello", "Hola", "你好", "Selamat Datang"];
+        const texts = ["Hello", "Hola", "你好", "Selamat Datang", "안녕하세요", "السلام عليكم"];
         let currentIndex = 0;
         let letterIndex = 0;
         function changeText() {

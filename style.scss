@@ -9,10 +9,21 @@ $primary-color:#333;
 $secondary-color: white;
 $tertiary-color: #b30f15;
 
-.nav__button {
-    text-decoration: none;
-    color: $primary-color;
- /*align text*/
+
+.nav{
+    text-align: end;
+    background-color: $primary-color;
+    height: 30px;
+        &__button {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 1rem;
+            margin-right: 10px;
+}   
+
 }
 
-
+.heading {
+    text-align: center;
+    margin-top: 40px;
+}
