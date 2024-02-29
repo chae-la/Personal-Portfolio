@@ -49,6 +49,8 @@ $tertiary-color: #b30f15;
         }
         &__container {
             display:flex;
+            flex-wrap: wrap;
+            gap: 25px;
             justify-content: space-evenly;
                 &--icon{
                     height:3rem;

@@ -79,6 +79,8 @@
 }
 .section__container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
   justify-content: space-evenly;
 }
 .section__container--icon {
