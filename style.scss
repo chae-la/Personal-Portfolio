@@ -1,7 +1,7 @@
 @use "_article-card.scss";
 $primary-color: black;
 $secondary-color: white;
-$tertiary-color: #b30f15;
+$tertiary-color: #e5c2f0;
 
 * {
     margin: 0;
@@ -86,27 +86,35 @@ $tertiary-color: #b30f15;
 
 @media screen and (min-width: 1024px){
     .nav{
+        background-color: $tertiary-color;
         display: unset;
         display: flex;
         justify-content: end;
-        
-        margin: 60px 0;    
+        padding: 60px 0;  
             &__button{
-                margin-right: 60px;
-                font-size: 1.5rem;
+                margin-right: 50px;
+                font-size: 1.8rem;
                 text-decoration: none;
                 color: $primary-color;
-                font-weight:500;
+                font-weight:bold;
                 &--contact{
                     border: 1px solid $primary-color;
                     padding: 7px 20px;
                     border-radius: 10px;
                     margin-top:-4px;
+                        &:hover{
+                            font-size: 2rem;
+                    transition: 0.5s;
+                    color: grey;
+                    border: 1px solid grey;
+                    
+                        }
                 }
                 &:hover{
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     transition: 0.5s;
-                    color: red;
+                    color: grey;
+                    
                 }
             }
      }
@@ -132,9 +140,15 @@ $tertiary-color: #b30f15;
                 text-align:left;
                 font-size: 2.5rem;
             }
+            &__img{
+                grid-row-start: 2;
+                height: 20rem;
+            }
             &__description{
                 grid-column-start: 2;
                 grid-row-start: 3 ;
+                font-size: 1.5rem;
+                line-height: 35px;
             }
      }
 
