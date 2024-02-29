@@ -61,6 +61,7 @@ $tertiary-color: #b30f15;
         }
 }
 
+
 .article{
     margin: 30px;
         &__title{
@@ -96,4 +97,24 @@ $tertiary-color: #b30f15;
                     transition: 0.5s;
                 }
         }
+}
+
+.footer{
+    height: 150px;
+    background-color: black;
+    &__container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+            &--icon{
+                height:2rem;
+        }
+    }
+    &__email{
+        color: $secondary-color;
+        margin: 15px;
+        text-align: center;
+        font-size: 1rem;
+    }
+        
 }
