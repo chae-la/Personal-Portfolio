@@ -162,16 +162,16 @@
     height: 5rem;
     margin-top: 30px;
   }
+  .article {
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
   .article__title {
     font-size: 2.5rem;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  div .article {
-    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
   .footer__container {
     justify-content: end;

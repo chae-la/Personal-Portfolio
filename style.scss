@@ -142,18 +142,21 @@ $tertiary-color: #b30f15;
             }
      }
 
-     .article__title{
-        font-size: 2.5rem;
-     }
-     div{
-        display:flex;
-        justify-content: center;
-        flex-wrap: wrap;
+     
+
      .article{
-        display: inline-block;
-        
-     }
-    }
+        margin:80px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+            &__title{
+             font-size: 2.5rem;
+             text-align: center;
+             width: 100%;
+            }
+            
+        }
+            
      
     
     .footer{
