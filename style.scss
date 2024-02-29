@@ -1,13 +1,12 @@
+@use "_article-card.scss";
+@use "_color.scss";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-
-$primary-color:#333;
-$secondary-color: white;
-$tertiary-color: #b30f15;
 
 .nav{
     display: none;
@@ -29,9 +28,6 @@ $tertiary-color: #b30f15;
         &__about{
             text-align: center;
             margin-top: 80px;
-        }
-        &__img{
-
         }
         &__description{
             line-height: 2rem;
@@ -59,12 +55,10 @@ $tertiary-color: #b30f15;
         }
 }
 
-@use "_article-card.scss";
-
 
 .footer{
     height: 150px;
-    background-color: black;
+    background-color: $primary-color;
     &__container{
         display: flex;
         justify-content: space-evenly;
@@ -146,11 +140,5 @@ $tertiary-color: #b30f15;
             }
      }
 
-     .article {
-        margin: 100px 80px;
-        display: grid;
-        
-     }
+     
 }
-
-
