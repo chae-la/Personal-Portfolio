@@ -61,6 +61,9 @@
   text-align: center;
   margin-top: 80px;
 }
+.main__img {
+  width: 15rem;
+}
 .main__description {
   line-height: 2rem;
 }
@@ -126,6 +129,11 @@
     border-radius: 10px;
     margin-top: -4px;
   }
+  .nav__button:hover {
+    font-size: 1.8rem;
+    transition: 0.5s;
+    color: red;
+  }
   .header {
     margin: 80px;
   }
@@ -161,7 +169,7 @@
     font-size: 1.5rem;
   }
   .section__container--icon {
-    height: 5rem;
+    height: 3rem;
     margin-top: 30px;
   }
   .article {
@@ -187,6 +195,6 @@
     display: flex;
     margin-left: 80px;
     margin-top: -35px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

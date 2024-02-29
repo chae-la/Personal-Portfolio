@@ -31,6 +31,10 @@ $tertiary-color: #b30f15;
             text-align: center;
             margin-top: 80px;
         }
+        &__img{
+            width: 15rem;
+            
+        }
         &__description{
             line-height: 2rem;
         }
@@ -99,7 +103,11 @@ $tertiary-color: #b30f15;
                     border-radius: 10px;
                     margin-top:-4px;
                 }
-                
+                &:hover{
+                    font-size: 1.8rem;
+                    transition: 0.5s;
+                    color: red;
+                }
             }
      }
 
@@ -139,8 +147,9 @@ $tertiary-color: #b30f15;
                 font-size: 1.5rem;
             }
             &__container--icon{
-                height: 5rem;
+                height: 3rem;
                 margin-top: 30px;
+                    
             }
      }
 
@@ -173,7 +182,7 @@ $tertiary-color: #b30f15;
             display:flex;
             margin-left: 80px;
             margin-top:-35px;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
       }
      
