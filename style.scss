@@ -60,26 +60,33 @@ $tertiary-color: #b30f15;
 }
 
 
-.article{
-    margin: 30px;
+/*.article{
+    margin: 70px 30px;
         &__title{
             text-align: center;
             margin-top: 80px;
+                &--my {
+                    display: none;
+                }
         }
         &__img{
             width: 260px;
+            
         }
         &__language{
             font-weight: bold;
             font-size: 0.75rem;
+            margin-left:10px;
         }
         &__client{
             font-size: 2rem;
+            margin-left:8px;
         }
         &__project {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             line-height:1.5rem;
             margin: 20px 0;
+            margin-left:10px;
         }
         &__button {
             text-decoration: none;
@@ -88,6 +95,7 @@ $tertiary-color: #b30f15;
             padding: 7px 20px;
             border-radius: 4px;
             margin-right: 20px;
+            margin-left: 10px;
             font-weight: 300;
                 &:hover{
                     background-color: $primary-color;
@@ -96,6 +104,7 @@ $tertiary-color: #b30f15;
                 }
         }
 }
+*/
 
 .footer{
     height: 150px;
@@ -179,6 +188,12 @@ $tertiary-color: #b30f15;
                 height: 5rem;
                 margin-top: 30px;
             }
+     }
+
+     .article {
+        margin: 100px 80px;
+        display: grid;
+        
      }
 }
 
