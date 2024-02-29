@@ -1,5 +1,7 @@
 @use "_article-card.scss";
-@use "_color.scss";
+$primary-color: black;
+$secondary-color: white;
+$tertiary-color: #b30f15;
 
 * {
     margin: 0;
@@ -140,5 +142,27 @@
             }
      }
 
+     .article {
+        margin: 80px;
+        display: grid;
+        
+     }
+
+    .footer{
+        &__container{
+            justify-content: end;
+            text-align: unset;
+                &--icon{
+                    height: 3rem;
+                    margin-right: 25px;
+                }
+        }
+        &__email{
+            display:flex;
+            margin-left: 80px;
+            margin-top:-35px;
+            font-size: 2rem;
+        }
+      }
      
 }
