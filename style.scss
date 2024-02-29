@@ -139,4 +139,47 @@ $tertiary-color: #b30f15;
                 
             }
      }
+
+     .header{
+        margin: 80px;
+            &__name{
+                font-size: 2.5rem;
+            }
+            &__intro{
+                font-size: 5rem;
+            }
+     }
+
+     .main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 8rem 2rem 25rem;
+        margin: 80px;
+            &__about{
+                grid-column-start: 2;
+                grid-row-start: 1;
+                text-align:left;
+                font-size: 2.5rem;
+            }
+            &__description{
+                grid-column-start: 2;
+                grid-row-start: 3 ;
+            }
+     }
+
+     .section {
+        margin: 0 150px;
+            &__about {
+                font-size: 2.5rem;
+            }
+            &__description {
+                font-size: 1.5rem;
+            }
+            &__container--icon{
+                height: 5rem;
+                margin-top: 30px;
+            }
+     }
 }
+
+

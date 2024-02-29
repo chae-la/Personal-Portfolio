@@ -127,4 +127,42 @@
     border-radius: 10px;
     margin-top: -4px;
   }
+  .header {
+    margin: 80px;
+  }
+  .header__name {
+    font-size: 2.5rem;
+  }
+  .header__intro {
+    font-size: 5rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 8rem 2rem 25rem;
+    margin: 80px;
+  }
+  .main__about {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .main__description {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .section {
+    margin: 0 150px;
+  }
+  .section__about {
+    font-size: 2.5rem;
+  }
+  .section__description {
+    font-size: 1.5rem;
+  }
+  .section__container--icon {
+    height: 5rem;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */
