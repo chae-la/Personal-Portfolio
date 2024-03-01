@@ -191,6 +191,10 @@
     text-align: center;
     width: 100%;
   }
+  .footer__email {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .nav {
@@ -272,6 +276,7 @@
     margin: 80px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
   }
   .article__title {
@@ -280,7 +285,7 @@
     width: 100%;
   }
   .article__div {
-    width: unset;
+    width: 260px;
   }
   .footer__container {
     justify-content: end;
