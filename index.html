@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-   <nav class="nav">
-        <a href="#header" class="nav__button">Home</a>
-        <a href="#main" class="nav__button"> About</a>
-        <a href="#section" class="nav__button">Projects</a>
-        <a href="#footer" class="nav__button nav__button--contact">Get In Touch</a>
+   
+   <nav class="nav" role="navigation">
+        
+                <a href="#header" class="nav__button">Home</a>
+                <a href="#main" class="nav__button"> About</a>
+                <a href="#section" class="nav__button">Projects</a>
+                <a href="#footer" class="nav__button nav__button--contact">Get In Touch</a>
     </nav> 
+
+    <button class="hamburger-menu" aria-label="Toggle Navigation Menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      
+      <nav class="navigation-menu">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#main">About</a></li>
+          <li><a href="#section">Services</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
 
         
      <header class="header" if="header">
@@ -119,7 +135,12 @@
     
     </footer>
      <script>
-        
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navigationMenu = document.querySelector('.navigation-menu');
+
+hamburgerMenu.addEventListener('click', () => {
+  navigationMenu.classList.toggle('active');
+});
 
         const text = "Hi! I'm Michaela"; 
         const speed = 50; 

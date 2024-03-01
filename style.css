@@ -43,6 +43,32 @@
   display: none;
 }
 
+.hamburger-menu {
+  display: block;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin: 6px auto;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation-menu {
+  display: none;
+}
+
+.navigation-menu.active {
+  display: block;
+}
+
 .header {
   margin: 30px;
 }
