@@ -9,37 +9,49 @@ $quaternary-color: #333;
     padding: 0;
     box-sizing: border-box;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
 }
 
 .nav{
-    display: none;
+        display:none;
+    }
+
+.menu {
+   
+    &__hamburger {
+        display: block;
+        margin: 30px 0 0 15px;
+        width: 40px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    &__line {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: $primary-color;
+        margin: 6px auto;
+    }
+
+    &__nav {
+        display: none;
+        margin-left: 25px;
+            &.active {
+            display: block;
+        }
+        &--list{
+            list-style-type: none;
+        }
+        &--item{
+            padding-top: 10px 
+        }
+    }
+    
 }
 
-.hamburger-menu {
-    display: block;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    padding: 0;
-}
-
-.line{
-    display:block;
-    width: 30px;
-    height: 2px;
-    background-color: $primary-color;
-    margin: 6px auto;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.navigation-menu{
-    display:none;
-}
-
-.navigation-menu.active{
-    display: block;
-}
 
 .header{
     margin: 30px;
@@ -98,16 +110,15 @@ $quaternary-color: #333;
         display: flex;
         justify-content: space-evenly;
         margin-top: 40px;
+        margin-bottom: 10px;
             &--icon{
                 height:2rem;
         }
     }
     &__email{
         color: $secondary-color;
-        margin: 15px;
         text-align: center;
         font-size: 1rem;
-        text-decoration: none;
     }
         
 }
@@ -133,6 +144,10 @@ $quaternary-color: #333;
                     }
              }
     
+    }
+
+    .menu{
+        display:none;
     }
     .header{
         margin: 50px;
@@ -201,8 +216,9 @@ $quaternary-color: #333;
     .footer{
         &__email{
             font-size: 1.2rem;
-            margin-top: 20px;
             color: $secondary-color;
+            text-align: center;
+            
         }
     }
 
@@ -243,6 +259,10 @@ $quaternary-color: #333;
                     
                 }
             }
+     }
+
+     .menu{
+        display: none;
      }
 
      .header{

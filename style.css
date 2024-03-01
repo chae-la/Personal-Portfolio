@@ -37,36 +37,41 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
 
 .nav {
   display: none;
 }
 
-.hamburger-menu {
+.menu__hamburger {
   display: block;
+  margin: 30px 0 0 15px;
   width: 40px;
   height: 30px;
   background: transparent;
   border: none;
   padding: 0;
 }
-
-.line {
+.menu__line {
   display: block;
-  width: 30px;
+  width: 20px;
   height: 2px;
   background-color: black;
   margin: 6px auto;
-  transition: background-color 0.3s, transform 0.3s;
 }
-
-.navigation-menu {
+.menu__nav {
   display: none;
+  margin-left: 25px;
 }
-
-.navigation-menu.active {
+.menu__nav.active {
   display: block;
+}
+.menu__nav--list {
+  list-style-type: none;
+}
+.menu__nav--item {
+  padding-top: 10px;
 }
 
 .header {
@@ -124,16 +129,15 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 .footer__container--icon {
   height: 2rem;
 }
 .footer__email {
   color: white;
-  margin: 15px;
   text-align: center;
   font-size: 1rem;
-  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -156,6 +160,9 @@
     padding: 5px 15px;
     border-radius: 10px;
     margin-top: -4px;
+  }
+  .menu {
+    display: none;
   }
   .header {
     margin: 50px;
@@ -220,8 +227,8 @@
   }
   .footer__email {
     font-size: 1.2rem;
-    margin-top: 20px;
     color: white;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -255,6 +262,9 @@
     font-size: 2rem;
     transition: 0.5s;
     color: grey;
+  }
+  .menu {
+    display: none;
   }
   .header {
     margin: 80px;
