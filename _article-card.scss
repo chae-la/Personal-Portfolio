@@ -1,6 +1,5 @@
 $primary-color: black;
 $secondary-color: white;
-$tertiary-color: #b30f15;
 
 .article{
     margin: 40px  30px;
@@ -36,4 +35,42 @@ $tertiary-color: #b30f15;
                 }
         }
 
+}
+
+@media screen and (min-width: 768px) {
+    .article {
+        margin: 50px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+      }
+      .article__div {
+        width: 30rem;
+      }
+      .article__title {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+      }
+}
+
+@media screen and (min-width: 1024px){
+    .article {
+        margin: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        &__title {
+          font-size: 2.5rem;
+          text-align: center;
+          width: 100%;
+        }
+        &__div {
+          width: 260px;
+        }
+      }
+    
 }
