@@ -82,8 +82,7 @@ $quaternary-color: #333;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
-  margin-bottom: 100px;
+  margin: 0 30px 100px 30px;
   &__about {
     text-align: center;
     margin-top: 80px;
@@ -103,13 +102,14 @@ $quaternary-color: #333;
     gap: 15px;
     width: calc(100% / 3);
     text-align: center;
-    &--icon, &--img {
+    &--icon,
+    &--img {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 80%;
     }
-    &--text{
+    &--text {
       text-align: center;
       font-size: 0.8rem;
       margin-bottom: 50px;
@@ -206,15 +206,15 @@ $quaternary-color: #333;
     &__container {
       justify-content: center;
       align-content: center;
-      width: calc(100% / 3 );
+      width: calc(100% / 3);
       &--icon {
-      width: 5rem;
+        width: 5rem;
       }
       &--text {
         font-size: 1rem;
       }
+    }
   }
-}
   .footer {
     &__email {
       font-size: 1.2rem;
@@ -251,7 +251,7 @@ $quaternary-color: #333;
       }
       &:hover {
         font-size: 2rem;
-        transition: 0.5s;
+        transition: 0.5s ease;
         color: grey;
       }
     }
@@ -267,7 +267,7 @@ $quaternary-color: #333;
       font-size: 2.5rem;
     }
     &__intro {
-      font-size: 5rem;
+      font-size: 7rem;
     }
   }
 
@@ -290,11 +290,11 @@ $quaternary-color: #333;
       grid-column-start: 2;
       grid-row-start: 3;
       font-size: 1.5rem;
-      line-height: 35px;
+      line-height: 40px;
     }
   }
 
-.section {
+  .section {
     margin: 0 100px;
     &__about {
       font-size: 2.5rem;
@@ -302,41 +302,41 @@ $quaternary-color: #333;
     &__description {
       font-size: 1.5rem;
     }
-    &__container{
+    &__container {
       display: flex;
       position: relative;
-      width: calc(100%/9);
-      &:hover{
-          flex-grow: 3.5rem;
-        }
-        &--icon {
+      width: calc(100% / 9);
+      &:hover {
+        flex-grow: 3.5rem;
+      }
+      &--icon {
         width: 3rem;
         margin-top: 30px;
+      }
+      &--text {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: $secondary-color;
+        padding: 5px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px;
+        z-index: 1;
+      }
+      &:hover {
+        .section__container--text {
+          display: block;
+          margin-top: 10px;
         }
-        &--text{
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          width: 100%;
-          transform: translateX(-50%);
-          background-color: #333;
-          color: $secondary-color;
-          padding: 5px;
-          border: 1px solid #333;
-          border-radius: 5px;
-          box-shadow: 0 2px 5px;
-          z-index: 1;
-        }
-        &:hover {
-          .section__container--text {
-            display: block;
-            margin-top: 10px;
-          }
-        }
+      }
+    }
   }
-}
-.footer {
+  .footer {
     &__container {
       justify-content: end;
       text-align: unset;
@@ -347,11 +347,10 @@ $quaternary-color: #333;
     }
     &__email {
       display: flex;
-      margin-left: 80px;
+      margin-left: 50px;
       margin-top: -35px;
       font-size: 1.5rem;
       color: $secondary-color;
     }
   }
 }
-

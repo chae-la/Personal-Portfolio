@@ -1,4 +1,4 @@
-console.log("test")
+
 document.addEventListener("DOMContentLoaded", () => {
     const hamburgerMenu = document.querySelector(".menu__hamburger");
     const navigationMenu = document.querySelector(".menu__nav");
@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
       navigationMenu.classList.toggle("active");
     });
   });
+
+
 
   const greetingOptions = ["Hi!", "Hola!", "Selamat Datang!", "你好!", "안녕하세요!", "こんにちは!"];
 const speed = 50;

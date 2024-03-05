@@ -142,8 +142,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 30px;
-  margin-bottom: 100px;
+  margin: 0 30px 100px 30px;
 }
 .section__about {
   text-align: center;
@@ -307,7 +306,7 @@
   }
   .nav__button:hover {
     font-size: 2rem;
-    transition: 0.5s;
+    transition: 0.5s ease;
     color: grey;
   }
   .menu {
@@ -320,7 +319,7 @@
     font-size: 2.5rem;
   }
   .header__intro {
-    font-size: 5rem;
+    font-size: 7rem;
   }
   .main {
     display: grid;
@@ -342,7 +341,7 @@
     grid-column-start: 2;
     grid-row-start: 3;
     font-size: 1.5rem;
-    line-height: 35px;
+    line-height: 40px;
   }
   .section {
     margin: 0 100px;
@@ -394,7 +393,7 @@
   }
   .footer__email {
     display: flex;
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: -35px;
     font-size: 1.5rem;
     color: white;
