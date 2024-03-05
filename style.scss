@@ -5,350 +5,356 @@ $tertiary-color: #e5c2f0;
 $quaternary-color: #333;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
 
-.nav{
-        display:none;
-    }
+.nav {
+  display: none;
+}
 
 .menu {
-   
-    &__hamburger {
-        display: block;
-        margin: 30px 0 0 15px;
-        width: 40px;
-        height: 30px;
-        background: transparent;
-        border: none;
-        padding: 0;
-    }
+  &__hamburger {
+    display: block;
+    margin: 30px 0 0 15px;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
 
-    &__line {
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: $primary-color;
-        margin: 6px auto;
-    }
+  &__line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $primary-color;
+    margin: 6px auto;
+  }
 
-    &__nav {
-        display: none;
-        margin-left: 25px;
-            &.active {
-            display: block;
-        }
-        &--list{
-            list-style-type: none;
-        }
-        &--item{
-            padding-top: 10px 
-        }
+  &__nav {
+    display: none;
+    margin-left: 25px;
+    &.active {
+      display: block;
     }
-    
+    &--list {
+      list-style-type: none;
+    }
+    &--item {
+      padding-top: 10px;
+    }
+  }
 }
 
-
-.header{
-    margin: 30px;
-        &__name{
-            margin-bottom: 15px;
-        }
-        &__intro{
-            font-size: 3rem;
-            font-weight: 500;
-        }
+.header {
+  margin: 30px;
+  background-color: rgba(229, 194, 240, 0.4);
+  &__name {
+    margin-bottom: 15px;
+  }
+  &__intro {
+    font-size: 3rem;
+    font-weight: 500;
+  }
 }
 
 .main {
-    margin: 30px;
-        &__about{
-            text-align: center;
-            margin-top: 80px;
-        }
-        &__img{
-            width: 15rem;
-            
-        }
-        &__description{
-            line-height: 2rem;
-        }
+  margin: 30px;
+  &__about {
+    text-align: center;
+    margin-top: 80px;
+  }
+  &__img {
+    width: 15rem;
+  }
+  &__description {
+    line-height: 2rem;
+  }
 }
 
-.section{
-    margin:30px;
-        &__about{
-         text-align: center;
-         margin-top: 80px;
-        }
-        &__description{
-            line-height: 2rem;
-            text-align: center;
-            margin: 30px 0px;
-        }
-        &__container {
-            display:flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: space-evenly;
-                &--icon{
-                    height:3rem;
-                }
-            
-        }
-}
-
-
-.footer{
-    height: 150px;
-    background-color: $primary-color;
-    &__container{
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 40px;
-        margin-bottom: 10px;
-            &--icon{
-                height:2rem;
-        }
-    }
-    &__email{
-        color: $secondary-color;
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+  &__about {
+    text-align: center;
+    margin-top: 80px;
+  }
+  &__description {
+    line-height: 2rem;
+    text-align: center;
+    margin: 30px 0px;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    &--icon {
+      width: 3rem;
+      &--text{
         text-align: center;
-        font-size: 1rem;
+        max-width: 3rem;
+      }
     }
-        
+    &--img{
+      display: inline-block;
+      width: 3rem;
+    }
+  }
+}
+
+.footer {
+  height: 150px;
+  background-color: $primary-color;
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    &--icon {
+      height: 2rem;
+    }
+  }
+  &__email {
+    color: $secondary-color;
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .nav{
-        background-color: $tertiary-color;
-        display: unset;
-        display: flex;
-        justify-content: end;
-        padding: 40px 0;
-            &__button{
-                text-decoration: none;
-                margin-right: 30px;
-                font-size: 1.5rem;
-                color: $primary-color;
-                font-weight: 500;
-                    &--contact{
-                        border: 1px solid $primary-color;
-                        padding: 5px 15px;
-                        border-radius: 10px;
-                        margin-top: -4px;
-                    }
-             }
-    
+  .nav {
+    background-color: $tertiary-color;
+    display: unset;
+    display: flex;
+    justify-content: end;
+    padding: 40px 0;
+    &__button {
+      text-decoration: none;
+      margin-right: 30px;
+      font-size: 1.5rem;
+      color: $primary-color;
+      font-weight: 500;
+      &--contact {
+        border: 1px solid $primary-color;
+        padding: 5px 15px;
+        border-radius: 10px;
+        margin-top: -4px;
+      }
     }
+  }
 
-    .menu{
-        display:none;
+  .menu {
+    display: none;
+  }
+  .header {
+    margin: 50px;
+    &__name {
+      font-size: 2rem;
     }
-    .header{
-        margin: 50px;
-            &__name{
-                font-size: 2rem;
-            }
-            &__intro{
-                font-size: 4rem;
-            }
+    &__intro {
+      font-size: 4rem;
     }
+  }
 
-    .main{
-        margin: 50px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 8rem 2rem 25rem;
-            &__about{
-                grid-column-start: 2;
-                grid-row-start: 1;
-                text-align: left;
-                font-size: 2rem;
-            }
-            &__img{
-                grid-row-start: 2;
-                height: 20rem;
-            }
-            &__description{
-                grid-column-start: 2;
-                grid-row-start: 3;
-                font-size: 1.3rem;
-                line-height: 30px;
-            }
+  .main {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 8rem 2rem 25rem;
+    &__about {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      text-align: left;
+      font-size: 2rem;
     }
+    &__img {
+      grid-row-start: 2;
+      height: 20rem;
+    }
+    &__description {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      font-size: 1.3rem;
+      line-height: 30px;
+    }
+  }
 
-    .section{
-        margin: 50px;
-            &__about{
-                font-size: 2rem;
-            }
-            &__description{
-                font-size: 1.2rem;
-            }
-            &__container--icon{
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-            }
+  .section {
+    margin: 50px;
+    &__about {
+      font-size: 2rem;
     }
+    &__description {
+      font-size: 1.2rem;
+    }
+    &__container--icon {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
 
-    .article {
-        margin: 50px;
-        margin-top: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-            &__div{
-                width:30rem;
-            }
-            &__title{
-                font-size: 2rem;
-                text-align: center;
-                width: 100%;
-            }
+  .article {
+    margin: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    &__div {
+      width: 30rem;
     }
-    .footer{
-        &__email{
-            font-size: 1.2rem;
-            color: $secondary-color;
-            text-align: center;
-            
-        }
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
     }
-
+  }
+  .footer {
+    &__email {
+      font-size: 1.2rem;
+      color: $secondary-color;
+      text-align: center;
+    }
+  }
 }
 
-
-
-@media screen and (min-width: 1024px){
-    .nav{
-        background-color: $tertiary-color;
-        display: unset;
-        display: flex;
-        justify-content: end;
-        padding: 60px 0;  
-            &__button{
-                margin-right: 50px;
-                font-size: 1.8rem;
-                text-decoration: none;
-                color: $primary-color;
-                font-weight:bold;
-                &--contact{
-                    border: 1px solid $primary-color;
-                    padding: 7px 20px;
-                    border-radius: 10px;
-                    margin-top:-4px;
-                        &:hover{
-                            font-size: 2rem;
-                    transition: 0.5s;
-                    color: grey;
-                    border: 1px solid grey;
-                    
-                        }
-                }
-                &:hover{
-                    font-size: 2rem;
-                    transition: 0.5s;
-                    color: grey;
-                    
-                }
-            }
-     }
-
-     .menu{
-        display: none;
-     }
-
-     .header{
-        margin: 80px;
-            &__name{
-                font-size: 2.5rem;
-            }
-            &__intro{
-                font-size: 5rem;
-            }
-     }
-
-     .main{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 8rem 2rem 25rem;
-        margin: 80px;
-            &__about{
-                grid-column-start: 2;
-                grid-row-start: 1;
-                text-align:left;
-                font-size: 2.5rem;
-            }
-            &__img{
-                grid-row-start: 2;
-                height: 20rem;
-            }
-            &__description{
-                grid-column-start: 2;
-                grid-row-start: 3 ;
-                font-size: 1.5rem;
-                line-height: 35px;
-            }
-     }
-
-     .section {
-        margin: 0 150px;
-            &__about {
-                font-size: 2.5rem;
-            }
-            &__description {
-                font-size: 1.5rem;
-            }
-            &__container--icon{
-                height: 3rem;
-                margin-top: 30px;
-                    
-            }
-     }
-
-     
-
-     .article{
-        margin:80px;
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-            &__title{
-             font-size: 2.5rem;
-             text-align: center;
-             width: 100%;
-            }     
-            &__div{
-                width: 260px;
-            }
-        }
-            
-     
-    
-    .footer{
-        &__container{
-            justify-content: end;
-            text-align: unset;
-                &--icon{
-                    height: 3rem;
-                    margin-right: 25px;
-                }
-        }
-        &__email{
-            display:flex;
-            margin-left: 80px;
-            margin-top:-35px;
-            font-size: 1.5rem;
-            color: $secondary-color;
+@media screen and (min-width: 1024px) {
+  .nav {
+    background-color: $tertiary-color;
+    display: unset;
+    display: flex;
+    justify-content: end;
+    padding: 60px 0;
+    &__button {
+      margin-right: 50px;
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: $primary-color;
+      font-weight: bold;
+      &--contact {
+        border: 1px solid $primary-color;
+        padding: 7px 20px;
+        border-radius: 10px;
+        margin-top: -4px;
+        &:hover {
+          font-size: 2rem;
+          transition: 0.5s;
+          color: grey;
+          border: 1px solid grey;
         }
       }
-     
+      &:hover {
+        font-size: 2rem;
+        transition: 0.5s;
+        color: grey;
+      }
     }
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin: 80px;
+    &__name {
+      font-size: 2.5rem;
+    }
+    &__intro {
+      font-size: 5rem;
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 8rem 2rem 25rem;
+    margin: 80px;
+    &__about {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      text-align: left;
+      font-size: 2.5rem;
+    }
+    &__img {
+      grid-row-start: 2;
+      height: 20rem;
+    }
+    &__description {
+      grid-column-start: 2;
+      grid-row-start: 3;
+      font-size: 1.5rem;
+      line-height: 35px;
+    }
+  }
+
+  .section {
+    margin: 0 150px;
+    &__about {
+      font-size: 2.5rem;
+    }
+    &__description {
+      font-size: 1.5rem;
+    }
+    &__container{
+      display: relative;
+        &--icon {
+        height: 3rem;
+        margin-top: 30px;
+        }
+        &--text{
+          display: none;
+          position: absolute;
+          background-color: $secondary-color;
+          padding: 10px;
+          border: 1px solid $primary-color;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+  }
+
+  .article {
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    &__title {
+      font-size: 2.5rem;
+      text-align: center;
+      width: 100%;
+    }
+    &__div {
+      width: 260px;
+    }
+  }
+
+  .footer {
+    &__container {
+      justify-content: end;
+      text-align: unset;
+      &--icon {
+        height: 3rem;
+        margin-right: 25px;
+      }
+    }
+    &__email {
+      display: flex;
+      margin-left: 80px;
+      margin-top: -35px;
+      font-size: 1.5rem;
+      color: $secondary-color;
+    }
+  }
+}
+}

@@ -76,6 +76,7 @@
 
 .header {
   margin: 30px;
+  background-color: rgba(229, 194, 240, 0.4);
 }
 .header__name {
   margin-bottom: 15px;
@@ -100,6 +101,9 @@
 }
 
 .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 30px;
 }
 .section__about {
@@ -114,11 +118,20 @@
 .section__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
 }
 .section__container--icon {
-  height: 3rem;
+  width: 3rem;
+}
+.section__container--icon--text {
+  text-align: center;
+  max-width: 3rem;
+}
+.section__container--img {
+  display: inline-block;
+  width: 3rem;
 }
 
 .footer {
@@ -306,34 +319,47 @@
   .section__description {
     font-size: 1.5rem;
   }
+  .section__container {
+    display: relative;
+  }
   .section__container--icon {
     height: 3rem;
     margin-top: 30px;
   }
-  .article {
+  .section__container--text {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .section .article {
     margin: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .article__title {
+  .section .article__title {
     font-size: 2.5rem;
     text-align: center;
     width: 100%;
   }
-  .article__div {
+  .section .article__div {
     width: 260px;
   }
-  .footer__container {
+  .section .footer__container {
     justify-content: end;
     text-align: unset;
   }
-  .footer__container--icon {
+  .section .footer__container--icon {
     height: 3rem;
     margin-right: 25px;
   }
-  .footer__email {
+  .section .footer__email {
     display: flex;
     margin-left: 80px;
     margin-top: -35px;
