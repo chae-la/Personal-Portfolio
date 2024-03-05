@@ -3,6 +3,7 @@
 }
 .article__title {
   text-align: center;
+  font-size: 2rem;
 }
 .article__div {
   width: 260px;
@@ -92,12 +93,14 @@
 .main__about {
   text-align: center;
   margin-top: 80px;
+  font-size: 2rem;
 }
 .main__img {
   width: 15rem;
 }
 .main__description {
-  line-height: 2rem;
+  line-height: 2.1rem;
+  font-size: 1.1rem;
 }
 
 .section {
@@ -105,10 +108,12 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 30px;
+  margin-bottom: 100px;
 }
 .section__about {
   text-align: center;
   margin-top: 80px;
+  font-size: 2rem;
 }
 .section__description {
   line-height: 2rem;
@@ -119,19 +124,23 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 30px;
   justify-content: center;
-}
-.section__container--icon {
-  width: 3rem;
-}
-.section__container--icon--text {
+  align-content: center;
+  gap: 15px;
+  width: 33.3333333333%;
   text-align: center;
-  max-width: 3rem;
 }
-.section__container--img {
-  display: inline-block;
-  width: 3rem;
+.section__container--icon, .section__container--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.section__container--text {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .footer {
