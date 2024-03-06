@@ -46,10 +46,10 @@ $secondary-color: white;
         flex-direction: column;
         align-items: center;
       }
-      .article__div {
+      &__div {
         width: 30rem;
       }
-      .article__title {
+      &__title {
         font-size: 2rem;
         text-align: center;
         width: 100%;
